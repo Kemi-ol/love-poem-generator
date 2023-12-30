@@ -1,26 +1,35 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f8f8;
+    background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
     color: #333;
     margin: 0;
     padding: 0;
     text-align: center;
+
   }
   
   .container {
+   
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
+    border: 2px solid #e64a4a;
+    border-radius: 50px;
+    margin-top: 100px;
+    background-color:  #f9d8d8;
+    box-shadow: #c55757;
   }
   
   h1 {
     color: #c55757;
+    
   }
   
   h2 {
     font-size: 1.2em;
     margin-bottom: 20px;
+    text-align: center;
   }
   
   form {
@@ -35,7 +44,8 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-right: 10px;
-    width: 200px;
+    width: 400px;
+
   }
   
   input[type="submit"] {
@@ -46,14 +56,13 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    
   }
   
   #poem {
     margin-top: 20px;
     padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    text-align: center;
   }
   
   footer {
@@ -70,4 +79,19 @@ body {
   
   p{
     text-align: center;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: -60px;
   }
+
+@keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  .blink-text {
+    animation: blink 1s infinite;
+  }
+  

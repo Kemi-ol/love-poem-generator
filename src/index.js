@@ -7,7 +7,7 @@ poemFormElement.addEventListener("submit", generatePoem)
 function displayPoem(response) {
     //console.log(response.data)
    
-
+    poemElement.classList.remove("blink-text");
     poemElement.innerHTML = response.data.answer
 
      new Typewriter("#poem", {
@@ -21,7 +21,8 @@ function displayPoem(response) {
 
 function generatePoem(event) {
     event.preventDefault()
-    poemElement.innerHTML = "Generating poem, hang on a sec...";
+    poemElement.innerHTML = "⏳Generating poem, hang on a sec...";
+    poemElement.classList.add("blink-text");
     let inputValue = document.querySelector("#word").value;
  console.log(inputValue);
  let apiKey= "c9c7oc64f71481aa1fa0f40af020b3t6";
