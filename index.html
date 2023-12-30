@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="src/styles.css">
-    <title>Poem Generator</title>
+   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+   <title>Poem Generator</title>
 </head>
 <body>
     <div class="container">
     <h1> AI Love Poem Generator ♥️🤭</h1>
     <h2>Enter a word and get a love poem</h2>
-        <form>
+        <form id ="poem-form">
         <input type="text" id="word" placeholder="Enter a word" autofocus required autocomplete="off">
         <input type="submit">
     </form>
