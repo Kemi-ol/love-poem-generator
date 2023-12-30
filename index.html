@@ -3,10 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="src/styles.css">
     <title>Poem Generator</title>
 </head>
 <body>
+    <div class="container"></div>
     <h1>Love Poem Generator </h1>
+    <h2>Enter a word and get a love poem</h2>
+        <form>
+        <input type="text" id="word" placeholder="Enter a word" autofocus required autocomplete="off">
+        <input type="submit">
+    </form>
+    <br>
+    <div id="poem"></div>
+    </div>
+    <footer>This AI project was coded by Kemi Oluwasanmi and is <a href="https://github.com/Kemi-ol/love-poem-generator">open-sourced on github</a></footer>
     
+    <script src="src/index.js"></script>
 </body>
 </html>
