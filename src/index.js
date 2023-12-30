@@ -6,6 +6,19 @@ poemFormElement.addEventListener("submit", generatePoem)
 
 function displayPoem(response) {
     //console.log(response.data)
+    if (response.data.answer === undefined) {
+        poemElement.innerHTML = "Sorry, I couldn't generate a poem. Please try again."
+        return;
+    }
+    else if (response.data.answer === "") {
+        poemElement.innerHTML = "Sorry, I couldn't generate a poem. Please try again."
+        return;
+    }
+    else if (!response.data.answer) {
+        poemElement.innerHTML = "Sorry, I couldn't generate a poem. Please try again."
+        return;
+    }
+    else{
    
     poemElement.classList.remove("blink-text");
     poemElement.innerHTML = response.data.answer
@@ -16,7 +29,7 @@ function displayPoem(response) {
     cursor: "",
     delay:1,
   });
-  
+}
 }
 
 function generatePoem(event) {
